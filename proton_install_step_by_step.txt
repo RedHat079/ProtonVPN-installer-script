@@ -1,0 +1,26 @@
+
+# Installation (trying to automate the installation with bash)
+wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.8_all.deb
+
+#
+sudo dpkg -i ./protonvpn-stable-release_1.0.8_all.deb
+
+#
+sudo apt update
+
+#
+sudo apt install proton-vpn-cli
+
+#
+sudo apt install systemd-resolved
+
+# Verification
+which protonvpn
+
+# Sign in
+
+protonvpn signin [proton_account]
+
+# Connect
+protonvpn connect
+
